@@ -21,6 +21,9 @@ export class TitleComponent implements OnInit {
           case '/about':
             this.title = 'About Page';
             break;
+          case '/contact':
+            this.title = 'Contact Page';
+            break;
         }
       }
     });
