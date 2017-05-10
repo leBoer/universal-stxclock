@@ -27,7 +27,23 @@ app.set('views', 'src')
 
 app.get('*.*', express.static(join(__dirname, '..', 'dist')));
 
-app.get('*', (req, res) => {
+// app.get('*', (req, res) => {
+//   res.render('index', { req });
+// });
+
+// app.get('/*', (req, res) => {
+//   res.render('index', { req });
+// });
+
+app.get('/about*', (req, res) => {
+  res.render('index', { req });
+});
+
+app.get('/contact*', (req, res) => {
+  res.render('index', { req });
+});
+
+app.get('/home*', (req, res) => {
   res.render('index', { req });
 });
 

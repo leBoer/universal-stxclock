@@ -26,7 +26,7 @@ export { AppComponent, TitleComponent, MetaDescriptionComponent };
     NgbModule.forRoot(),
     BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),
     RouterModule.forRoot([
-      { path: '', loadChildren: './home/home.module#HomeModule' },
+      { path: 'home', loadChildren: './home/home.module#HomeModule' },
       { path: 'about', loadChildren: './about/about.module#AboutModule' },
       { path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
       { path: '**', redirectTo: '', pathMatch: 'full' },

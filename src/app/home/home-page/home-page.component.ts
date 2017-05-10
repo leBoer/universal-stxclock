@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
   myDate: Date;
 
   constructor(private exchangeService: ExchangeService,
-              private clockService: ClockService,
+              private clockService: ClockService
              ) {}
 
   ngOnInit(): void {
